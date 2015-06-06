@@ -22,19 +22,11 @@
 </script>
 <style type="text/css">
 
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
-
-
-
-h2, h4 {
-	font-family: 'Open Sans', sans-serif;
-}
-
 body {
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
+  background: url('./images/bg.jpg');
 }
 
 .center {
@@ -43,7 +35,6 @@ body {
 }
 
 code {
-  background: #2db34a;
   border-radius: 6px;
   color: #fff;
   display: block;
@@ -53,8 +44,8 @@ code {
 }
 
 .default {
-  background: none;
-  color: #666;
+
+  color: #FFF;
 }
 
 .group:before,
@@ -68,7 +59,6 @@ code {
 }
 
 .group {
-  background: #eaeaed;
   border-radius: 6px;
   clear: both;
   *    : 1;
@@ -143,29 +133,34 @@ footer {
 <body>
 
 <header>
-  <code><img src="./images/Logo.png" alt="HHunterDev" style="align:center; width:200px;height:200px;"> <br> Welcome to my website!</code>
+  <code><img src="./images/Logo.png" alt="HHunterDev" style="align:center; width:200px;height:200px;"></code>
 </header>
 
 <div class="group">
-  <code class="default">&#60;section="group"&#62;</code>
+  <code class="default"><h1>Welcome to my website!</h1></code>
 
   <section>
-    <code>&#60;section&#62; <br> float: left;</code>
+    <code>
+      <h1>About me</h1>
+      <p style="font-size:15px;">I'm a 17 year old freelance iOS tweak developer from Australia, I've made a few tweaks including LockEditor, SleekCode and SleekPhone.
+      I tried theming about a year or so ago but that didn't go well.<br>
+      <br>
+      I'm interested in iOS development and website development, this website being my first public website so I hope you like it ;P</p></code>
   </section>
 
   <aside>
-    <code><img src="./images/Me.jpg" alt="Hayden Hunter" style="align:center; width:200px;height:200px; border-radius:100px"> <br> 
+    <code><img src="./images/Me.jpg" alt="Hayden Hunter" style="align:center; width:200px;height:200px; border-radius:100px; display:inline-block"> <br> 
     <p>
       <a href="https://twitter.com/HHunterDev"><img src="./images/twitter.png" class="social hvr-grow" style="width: 50px; height:50px"></img></a>
       <a href="https://reddit.com/haydenlh1"><img src="./images/reddit.png" class="social hvr-grow" style="width: 50px; height:50px"></img></a>
-      <a href="https://github.com/HHunterDev"><img src="./images/github.png" class="social hvr-grow" style="width: 50px; height:50px"></img></a>
+      <a href="https://github.com/HHunterDev" target="_blank"><img src="./images/github.png" class="social hvr-grow" style="width: 50px; height:50px"></img></a>
     </p>
       </code>
   </aside>
 </div>
 
 <footer>
-<code>&#60;footer&#62; <br> clear: both;</code>
+<code><h5 style="opacity:0.5;">© Hayden Hunter 2015<h5></code>
 </footer>
 
  <script src="http://code.jquery.com/jquery.js"></script>
