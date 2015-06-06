@@ -1,15 +1,192 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="1;url=http://hhunterdev.github.io/home">
-        <script type="text/javascript">
-            window.location.href = "http://hhunterdev.github.io/home"
-        </script>
-        <title>HHunterDev - Goto Home</title>
-    </head>
-    <body>
-        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
-        You're almost there! Follow <a href='http://hhunterdev.github.io/home'>this link</a> to my website!
-    </body>
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function select_all(obj) {
+		
+		var text_val=eval(obj);
+
+		text_val.focus();
+
+		text_val.setSelectionRange(0, 9999);
+
+
+
+		if (!document.all)
+			return;
+
+		r = text_val.createTextRange();
+
+		r.execCommand('copy');
+	}
+</script>
+<style type="text/css">
+
+body {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+  background: url('./images/bg.jpg');
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  width: 60px;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+code {
+  border-radius: 6px;
+  color: #fff;
+  display: block;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Couria;
+  padding: 24px 15px;
+  text-align: center;
+}
+
+.default {
+
+  color: #FFF;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  border-radius: 6px;
+  clear: both;
+  *    : 1;
+}
+
+.group,
+section,
+aside,
+footer {
+  margin: 0 1.5% 24px 1.5%;
+}
+
+header {
+  margin: 1.5% 1.5% 1.5% 1.5%;
+}
+
+section {
+  float: left;
+  width: 63%;
+}
+
+aside {
+  float: right;
+  width: 30%;
+}
+
+footer {
+  margin-bottom: 0;
+}
+
+.social {
+  width: 10%;
+  height: 10%;
+  opacity: 0.5;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.social:hover {
+  opacity: 1.0;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Thanks to hizinfiz for the social icons area */
+
+</style>
+
+ <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+ <title>HHunterDev - Home</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<ul>
+  <li><a href="http://hhunterdev.github.io/home">Home</a></li>
+  <li><a href="http://hhunterdev.github.io/repo">Repo</a></li>
+</ul>
+
+<header>
+  <code><img src="./images/Logo.png" alt="HHunterDev" style="align:center; width:200px;height:200px;"></code>
+</header>
+
+<div class="group">
+  <code class="default"><h1>Welcome to my website!</h1></code>
+
+  <section>
+    <code>
+      <h1>About me</h1>
+      <p style="font-size:15px;">I'm a 17 year old freelance iOS tweak developer from Australia, I've made a few tweaks including LockEditor, SleekCode and SleekPhone.
+      I tried theming about a year or so ago but that didn't go well.<br>
+      <br>
+      I'm interested in iOS development and website development, this website being my first public website so I hope you like it ;P</p></code>
+  </section>
+
+  <aside>
+    <code><img src="./images/Me.jpg" alt="Hayden Hunter" style="align:center; width:200px;height:200px; border-radius:100px; display:inline-block"> <br> 
+    <p>
+      <a href="https://twitter.com/HHunterDev"><img src="./images/twitter.png" class="social hvr-grow" style="width: 50px; height:50px"></img></a>
+      <a href="https://reddit.com/haydenlh1"><img src="./images/reddit.png" class="social hvr-grow" style="width: 50px; height:50px"></img></a>
+      <a href="https://github.com/HHunterDev" target="_blank"><img src="./images/github.png" class="social hvr-grow" style="width: 50px; height:50px"></img></a>
+    </p>
+      </code>
+  </aside>
+</div>
+
+<footer>
+<code><h5 style="opacity:0.5;">© Hayden Hunter 2015<h5></code>
+</footer>
+
+ <script src="http://code.jquery.com/jquery.js"></script>
+ <script src="../js/bootstrap.min.js"></script>
+</body>
 </html>
