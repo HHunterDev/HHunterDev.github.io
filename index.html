@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function select_all(obj) {
+		
+		var text_val=eval(obj);
+
+		text_val.focus();
+
+		text_val.setSelectionRange(0, 9999);
+
+
+
+		if (!document.all)
+			return;
+
+		r = text_val.createTextRange();
+
+		r.execCommand('copy');
+	}
+</script>
+
+ <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/Style.css">
+ <title>HHunterDev - Home</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<header>
+  <code><img src="./images/Logo.png" alt="HHunterDev" class="hvr-grow"style="align:center; width:200px;height:60px;"></code>
+</header>
+
+<div id="navbar">
+  <ul>
+    <li><a href="http://hhunterdev.github.io" class="thisPage hvr-grow">Home</a></li>
+    <li><a href="http://hhunterdev.github.io/repo" class="hvr-grow">Repo</a></li>
+  </ul>
+</div>
+
+<div class="group">
+  <code class="default"><h1>Welcome to my website!</h1></code>
+
+  <section>
+    <code>
+      <h1>About me</h1>
+      <p>I'm a 17 year old freelance iOS tweak developer from Australia, I've made a few tweaks including <a href="#" target="_blank" class="tweaks hvr-grow">LockEditor</a>, SleekCode and SleekPhone.
+      I tried theming about a year or so ago but that didn't go well.<br>
+      <br>
+      I'm interested in iOS development and website development, this website being my first public website so I hope you like it ;P</p></code>
+  </section>
+
+  <aside>
+    <code><img src="./images/Me.jpg" alt="Hayden Hunter" class="hvr-grow" style="align:center; width:200px;height:200px; border-radius:100px; display:inline-block"> <br> 
+    <p>
+      <a href="https://twitter.com/HHunterDev"><img src="./images/twitter.png" class="social hvr-grow" style="width: 50px; height:50px"></img></a>
+      <a href="https://reddit.com/haydenlh1"><img src="./images/reddit.png" class="social hvr-grow" style="width: 50px; height:50px"></img></a>
+      <a href="https://github.com/HHunterDev" target="_blank"><img src="./images/github.png" class="social hvr-grow" style="width: 50px; height:50px"></img></a>
+    </p>
+      </code>
+  </aside>
+</div>
+
+<footer>
+<code><p style="opacity:0.5; text-align:left; font-size:10px">© Hayden Hunter 2015</p></code>
+</footer>
+
+ <script src="http://code.jquery.com/jquery.js"></script>
+ <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
