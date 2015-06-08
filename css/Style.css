@@ -7,7 +7,7 @@ body {
 }
 
 #main h2 h4 {
-  font: 14px/24px "Arial", Helvetica, sans-serif;
+  font: 14px/24px "Avenir Next", Helvetica, sans-serif;
 }
 
 .center {
@@ -16,10 +16,11 @@ body {
 }
 
 code {
+  background-color: rgba(0,0,0,0.0);
   border-radius: 6px;
   color: #fff;
   display: block;
-  font: 14px/24px "Arial", Helvetica, sans-serif;
+  font: 14px/24px "Avenir Next", Helvetica, sans-serif;
   padding: 24px 15px;
   text-align: center;
 }
@@ -139,7 +140,7 @@ footer {
   text-decoration: none;
   display: block;
   padding: 15px 25px;
-  font: 14px/24px "Arial", Helvetica, sans-serif;
+  font: 14px/24px "Avenir Next", Helvetica, sans-serif;
   font-size: 30px;
   position: relative;
 }
@@ -156,7 +157,11 @@ footer {
 
 .tweaks {
   color: #fff;
-  font: 14px/24px "Arial", Helvetica, sans-serif;
+  font: 14px/24px "Avenir Next", Helvetica, sans-serif;
   font-size: 16px;
   text-decoration: none;
+}
+
+.tweaks:hover {
+  color: #ababab;
 }

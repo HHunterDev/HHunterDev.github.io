@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript">
-	function select_all(obj) {
-		
-		var text_val=eval(obj);
 
-		text_val.focus();
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-		text_val.setSelectionRange(0, 9999);
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-
-		if (!document.all)
-			return;
-
-		r = text_val.createTextRange();
-
-		r.execCommand('copy');
-	}
-</script>
-
- <meta charset='utf-8'>
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="css/Style.css">
  <title>HHunterDev - Home</title>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <script type="text/javascript">
+  function select_all(obj) {
+    
+    var text_val=eval(obj);
+
+    text_val.focus();
+
+    text_val.setSelectionRange(0, 9999);
+
+
+
+    if (!document.all)
+      return;
+
+    r = text_val.createTextRange();
+
+    r.execCommand('copy');
+  }
+</script>
 
 </head>
 <body>
@@ -42,25 +49,23 @@
 </div>
 
 <div class="group">
-  <code class="default"><h1>Welcome to my website!</h1></code>
+  <code class="default"><p style="font-size:24px">Welcome to my website!</p></code>
 
   <section>
     <code>
-      <h1>About me</h1>
-      <p>I'm a 17 year old freelance iOS tweak developer from Australia, I've made a few tweaks including <a href="#" target="_blank" class="tweaks hvr-grow">LockEditor</a>, SleekCode and SleekPhone.
+      <p style="font-size:24px">About me</p>
+      <p>I'm a 17 year old freelance iOS tweak developer from Australia, I've made a few tweaks including <a href="http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=lockeditorDp" target="_blank" class="tweaks">LockEditor</a>, <a href="http://cydia.saurik.com/package/com.newjoy.sleekcode/" target="_blank" class="tweaks">SleekCode</a> and <a href="http://cydia.saurik.com/package/com.newjoy.sleekphone/" target="_blank" class="tweaks">SleekPhone</a>.
       I tried theming about a year or so ago but that didn't go well.<br>
       <br>
       I'm interested in iOS development and website development, this website being my first public website so I hope you like it ;P</p></code>
   </section>
 
   <aside>
-    <code><img src="./images/Me.jpg" alt="Hayden Hunter" class="hvr-grow" style="align:center; width:200px;height:200px; border-radius:100px; display:inline-block"> <br> 
-    <p>
+    <p><img src="./images/Me.jpg" alt="Hayden Hunter" class="hvr-grow" style="align:center; width:200px;height:200px; border-radius:100px; display:inline-block">
+    </p>
       <a href="https://twitter.com/HHunterDev"><img src="./images/twitter.png" class="social hvr-grow" style="width: 50px; height:50px"></img></a>
       <a href="https://reddit.com/haydenlh1"><img src="./images/reddit.png" class="social hvr-grow" style="width: 50px; height:50px"></img></a>
       <a href="https://github.com/HHunterDev" target="_blank"><img src="./images/github.png" class="social hvr-grow" style="width: 50px; height:50px"></img></a>
-    </p>
-      </code>
   </aside>
 </div>
 
