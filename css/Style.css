@@ -25,11 +25,6 @@ code {
   text-align: center;
 }
 
-.default {
-
-  color: #FFF;
-}
-
 .group:before,
 .group:after {
   content: "";
@@ -48,7 +43,6 @@ code {
 
 .group,
 section,
-aside,
 footer,
 header {
   margin: 0 1.5% 24px 1.5%;
@@ -59,13 +53,8 @@ header {
 }
 
 section {
-  float: left;
-  width: 63%;
-}
-
-aside {
-  float: right;
-  width: 30%;
+  text-align: center;
+  width: auto;
 }
 
 footer {
@@ -136,12 +125,9 @@ footer {
 }
 
 #navbar ul li a {
-  color: rgba(1,1,1,0.5);
   text-decoration: none;
   display: block;
   padding: 15px 25px;
-  font: 14px/24px "Avenir Next", Helvetica, sans-serif;
-  font-size: 30px;
   position: relative;
 }
 
@@ -164,4 +150,18 @@ footer {
 
 .tweaks:hover {
   color: #ababab;
+}
+
+input {
+  background-color: rgba(0,0,0,0);
+  color: #fff;
+  border-width: 0 0 2px 0;
+  border-bottom-style: dotted;
+  font: 14px/24px "Avenir Next", Helvetica, sans-serif;
+
+}
+
+input:hover {
+  opacity: 0.8;
+  border-bottom-color: rgba(255,255,255,0.8);
 }
