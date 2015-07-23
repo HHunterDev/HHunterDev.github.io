@@ -145,7 +145,7 @@ footer {
   color: #fff;
   font: 14px/24px "Avenir Next", Helvetica, sans-serif;
   font-size: 16px;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .tweaks:hover {
