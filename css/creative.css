@@ -213,6 +213,10 @@ header .header-content .header-content-inner p {
 
 }
 
+header .header-content .header-content-inner .repo p {
+    margin-bottom: 10px;
+}
+
 @media(min-width:768px) {
     header {
         min-height: 100%;
@@ -322,6 +326,10 @@ header .header-content .header-content-inner p {
 
 .call-to-action h2 {
     margin: 0 auto 20px;
+}
+
+.call-to-action .repo-button {
+    margin-bottom: 180px;
 }
 
 .text-primary {
